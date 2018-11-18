@@ -1,9 +1,11 @@
+<a href="?page=buku&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">TAMBAH DATA</a>
+
 <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                                TABEL BUKU
+                                DATA BUKU
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -26,15 +28,15 @@
                                             while($data=$sql->fetch_assoc()){
                                         ?>
                                         <tr>
-                                            <td><?php echo $no++; ?></td>
+                                            <td><?php echo $no++;?></td>
                                             <td><?php echo $data['judul'];?></td>
                                             <td><?php echo $data['pengarang'];?></td>
                                             <td><?php echo $data['penerbit'];?></td>
                                             <td><?php echo $data['isbn'];?></td>
                                             <td><?php echo $data['jumlah_buku'];?></td>
                                             <td>
-                                                <a href="" class="btn btn.info">Ubah</a>
-                                                <a href="" class="btn btn.danger">Hapus</a>
+                                                <a href="" class="btn btn-info" > Ubah </a>
+                                                <a href="" class="btn btn-danger" > Hapus </a>
                                         </tr>
                                         
                                         <?php } ?>
